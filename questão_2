@@ -1,0 +1,11 @@
+escolha = input("Digite 'c' para converter Celsius para Fahrenheit ou 'f' para Fahrenheit para Celsius: ")
+if escolha == 'c':
+    celsius = float(input("Digite a temperatura em Celsius: "))
+    fahrenheit = (celsius * 9/5) + 32
+    print(f"{celsius} Celsius é igual a {fahrenheit:.2f} Fahrenheit.")
+elif escolha == 'f':
+    fahrenheit = float(input("Digite a temperatura em Fahrenheit: "))
+    celsius = (fahrenheit - 32) * 5/9
+    print(f"{fahrenheit} Fahrenheit é igual a {celsius:.2f} Celsius.")
+else:
+    print("Escolha inválida.")
